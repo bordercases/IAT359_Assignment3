@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.kbruskie.kennethbruskiewicz_a3.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/buttonRetrieveNumbers"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Retrieve Random Numbers"/>
+
+        <Button
+            android:id="@+id/buttonClearAll"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Clear All"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/number0"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="____"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/number1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="____"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/number2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="____"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/number3"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="____"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <GridLayout
+        android:rowCount="2"
+        android:columnCount="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:useDefaultMargins="true"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/multiple2"
+            android:text="Multiples of 2"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+        <TextView
+            android:id="@+id/multiple3"
+            android:text="Multiples of 3"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+        <TextView
+            android:id="@+id/multiple5"
+            android:text="Multiples of 5"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+        <TextView
+            android:id="@+id/multiple10"
+            android:text="Multiples of 10"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+    </GridLayout>
+</LinearLayout>
